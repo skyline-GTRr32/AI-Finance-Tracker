@@ -229,8 +229,10 @@ export const getSpendingInsights = async (transactions, timeframe = 'monthly') =
   }
 };
 
-export default {
+const aiService = {
   getAIFinanceSuggestions,
   categorizeTransaction,
   getSpendingInsights
 };
+
+export default aiService;

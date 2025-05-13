@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { FaWallet, FaChartLine, FaPiggyBank, FaArrowUp, FaArrowDown, FaSync } from 'react-icons/fa';
+import { FaWallet, FaPiggyBank, FaArrowUp, FaArrowDown } from 'react-icons/fa';
 import { useTransactions } from '../context/TransactionContext';
 import { Chart as ChartJS, ArcElement, Tooltip, Legend, Title, CategoryScale, LinearScale } from 'chart.js';
 import { Pie } from 'react-chartjs-2';

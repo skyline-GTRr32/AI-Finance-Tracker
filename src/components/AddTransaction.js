@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { useTransactions } from '../context/TransactionContext';
 import { categorizeTransaction } from '../services/aiService';
 import { FaRobot, FaTimes, FaPlus } from 'react-icons/fa';

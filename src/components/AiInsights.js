@@ -1,12 +1,12 @@
 import React, { useState, useCallback, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { FaChartLine, FaSync, FaLightbulb, FaTimes, FaPiggyBank, FaChartBar, FaListUl } from 'react-icons/fa';
+import { FaChartLine, FaSync, FaTimes, FaPiggyBank, FaChartBar, FaListUl } from 'react-icons/fa';
 import { useTransactions } from '../context/TransactionContext';
-import { getAIFinanceSuggestions, getSpendingInsights } from '../services/aiService';
+import { getSpendingInsights } from '../services/aiService';
 
 const AiInsights = () => {
   const { state } = useTransactions();
-  const { transactions, budgets } = state;
+  const { transactions } = state;
   
   const [activeTab, setActiveTab] = useState('spending');
   const [insights, setInsights] = useState({

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useTransactions } from '../context/TransactionContext';
-import { FaEdit, FaTrash, FaSort } from 'react-icons/fa';
+import { FaEdit, FaTrash } from 'react-icons/fa';
 
 const TransactionList = () => {
   const { state, dispatch } = useTransactions();
