@@ -1,0 +1,274 @@
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f5f7fa 0%, #f1f5f9 100%);
+}
+
+.content-container {
+  display: flex;
+  flex: 1;
+}
+
+.main-content {
+  flex: 1;
+  padding: 28px;
+  overflow-y: auto;
+  transition: padding 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    padding: 16px;
+  }
+}
+
+.card {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+  padding: 24px;
+  margin-bottom: 20px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+.section-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #1e293b;
+  position: relative;
+  padding-bottom: 8px;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 40px;
+  background: linear-gradient(90deg, #1890ff 0%, #096dd9 100%);
+  border-radius: 3px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+/* Added utility classes for text colors */
+.text-primary-500 {
+  color: #6366f1;
+}
+
+.text-primary-600 {
+  color: #4f46e5;
+}
+
+.text-success-600 {
+  color: #059669;
+}
+
+.text-danger-600 {
+  color: #dc2626;
+}
+
+.text-danger-500 {
+  color: #ef4444;
+}
+
+.text-danger-700 {
+  color: #b91c1c;
+}
+
+/* Added utility classes for backgrounds */
+.bg-danger-50 {
+  background-color: #fef2f2;
+}
+
+.bg-danger-100 {
+  background-color: #fee2e2;
+}
+
+.bg-primary-50 {
+  background-color: #eef2ff;
+}
+
+.bg-primary-100 {
+  background-color: #e0e7ff;
+}
+
+.bg-primary-600 {
+  background-color: #4f46e5;
+}
+
+.bg-primary-700 {
+  background-color: #4338ca;
+}
+
+.bg-success-600 {
+  background-color: #059669;
+}
+
+.bg-danger-600 {
+  background-color: #dc2626;
+}
+
+/* Added utility classes for borders */
+.border-danger-100 {
+  border-color: #fee2e2;
+}
+
+/* Hover utility classes */
+.hover\:bg-primary-700:hover {
+  background-color: #4338ca;
+}
+
+.hover\:bg-gray-200:hover {
+  background-color: #e5e7eb;
+}
+
+.hover\:bg-danger-50:hover {
+  background-color: #fef2f2;
+}
+
+.hover\:bg-primary-50:hover {
+  background-color: #eef2ff;
+}
+
+.hover\:text-primary-600:hover {
+  color: #4f46e5;
+}
+
+.hover\:text-danger-600:hover {
+  color: #dc2626;
+}
+
+.hover\:text-primary-800:hover {
+  color: #3730a3;
+}
+
+.hover\:shadow-md:hover {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+/* Focus utility classes */
+.focus\:ring-primary-500:focus {
+  --tw-ring-color: #6366f1;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.5);
+}
+
+.focus\:ring-2:focus {
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+}
+
+.focus\:bg-white:focus {
+  background-color: #ffffff;
+}
+
+.hover\:shadow-md:hover {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+/* Shadow styles */
+.shadow-card {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+}
+
+.shadow-card-hover {
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+.shadow-sm {
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.shadow-md {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.shadow-lg {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.shadow-xl {
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* For background opacity utility classes */
+.bg-blue-100 {
+  background-color: rgba(219, 234, 254, 1);
+}
+
+.bg-blue-50 {
+  background-color: rgba(239, 246, 255, 1);
+}
+
+.bg-indigo-50 {
+  background-color: rgba(238, 242, 255, 1);
+}
+
+.bg-indigo-100 {
+  background-color: rgba(224, 231, 255, 1);
+}
+
+.bg-amber-50 {
+  background-color: rgba(255, 251, 235, 1);
+}
+
+.bg-amber-100 {
+  background-color: rgba(254, 243, 199, 1);
+}
+
+/* Text colors */
+.text-blue-600 {
+  color: rgba(37, 99, 235, 1);
+}
+
+.text-blue-700 {
+  color: rgba(29, 78, 216, 1);
+}
+
+.text-amber-600 {
+  color: rgba(217, 119, 6, 1);
+}
+
+/* Animation classes */
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.animate-pulse-slow {
+  animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.animate-spin {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
