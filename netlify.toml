@@ -1,0 +1,9 @@
+[build]
+  command = "npm run build:ci"
+  publish = "build"
+
+# This makes sure that React Router works properly with Netlify
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

@@ -2,7 +2,7 @@
 
 An intelligent personal finance management application leveraging AI to provide financial insights and help users manage their money more effectively.
 
-![AI Finance Tracker Preview](./public/preview.png)
+![AI Finance Tracker Preview](image/f2.PNG)
 
 ## 🌟 Overview
 
